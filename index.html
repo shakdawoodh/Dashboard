@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap&family=Oswald&display=swap" rel="stylesheet"
+        rel="stylesheet">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+
+    <div class="zvt-main-container">
+
+        <!-- SIDE BAR -->
+        <div class="zvt-sidebar-container ">
+
+            <!-- HEADER -->
+            <div class="zvt-header-container padding-10 ">
+                <img src="images/logo.png" alt="Logo">
+                <a href="#" class="zvt-logo-name text-decoration-none">Admin Panel</a>
+
+            </div>
+
+            <!-- BUTTONS -->
+            <div class="zvt-slidebar-content-btn margin-15">
+                <a href="#" class="text-decoration-none active "><i class="icofont-home"></i> Home</a>
+                <a href="#" class="text-decoration-none "><i class="icofont-clock-time"></i> History</a>
+                <a href="#" class="text-decoration-none "><i class="icofont-law-alt-2"></i> Balances</a>
+                <a href="#" class="text-decoration-none "><i class="icofont-credit-card"></i> Cards</a>
+                <a href="#" class="text-decoration-none "><i class="icofont-ui-user-group"></i> Recipients</a>
+                <a href="#" class="text-decoration-none "><i class="icofont-chart-histogram"></i> Reports</a>
+            </div>
+
+            <div class="zvt-slidebar-content-setting-btn zvt-bottom-content margin-15">
+                <a href="#" class="text-decoration-none"><i class="icofont-ui-settings"></i> Setting</a>
+                <a href="#" class="text-decoration-none "><i class="icofont-info-circle"></i> Help</a>
+                <a href="#" class="text-decoration-none "><i class="icofont-shield-alt"></i>Privacy</a>
+            </div>
+        </div>
+
+        <!-- MAIN WINDOW -->
+        <div class="zvt-main-window">
+
+            <!-- HEADER -->
+            <header class="zvt-nav-bar ">
+                <div class="zvt-search-box margin-10">
+                    <label for="search"><i class="icofont-ui-search"></i></label>
+                    <input type="text" name="search" id="search" placeholder="search transactions">
+                </div>
+                <div class="zvt-user-info margin-15">
+                    <button class="button-style-none notification"><i class="icofont-notification"></i></button>
+                    <img src="images/user_01.png" alt="User_img">
+                    <button class="button-style-none ">Dawoodh <i class="icofont-rounded-down"></i></button>
+                </div>
+
+            </header>
+
+            <!-- LOGIN INFO CONTAINER -->
+            <div class="zvt-user-window margin-10">
+                <div class="zvt-user-image">
+                    <img src="images/user_01.png" alt="User-image">
+                    <div class="zvt-user-name padding-10">
+                        <h3>Good Morning , <span>Dawoodh</span></h3>
+                        <ul class="zvt-user-name-info margin-top-bottom-5  padding-10">
+                            <li> <i class="icofont-building"></i> Fabevy Tech,chennai</li>
+                            <li> <i class="icofont-checked green"></i> Verified Account</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="zvt-user-btns">
+                    <button class="zvt-Add-btn">Add Money</button>
+                    <button class="zvt-Send-btn">Send Money</button>
+                </div>
+                
+            </div>
+
+            <!-- OVERVIEW CONTAINER -->
+            <h3 class="zvt-overview-heading margin-15">Overview</h3>
+            <div class="zvt-overview-cards">
+                <div class="zvt-card-container margin-15">
+                    <div class="zvt-card-content margin-15">
+                        <div class="zvt-card-icon margin-10">
+                            <i class="icofont-law-alt-1" id="icofont-law-alt-1"></i>
+                        </div>
+
+                        <div class="zvt-card-icon-content">
+                            <span>Account Balances</span>
+                            <h4>$ 30,659.45</h4>
+                        </div>
+                    </div>
+                    <div class="zvt-card-footer">
+                        <a class="text-decoration-none" href="#">View All</a>
+                    </div>
+                </div>
+                <div class="zvt-card-container margin-15">
+                    <div class="zvt-card-content margin-15">
+                        <div class="zvt-card-icon margin-10">
+                            <i class="icofont-ui-rotation"></i>
+                        </div>
+
+                        <div class="zvt-card-icon-content">
+                            <span>Pending</span>
+                            <h4>$ -19,500.00</h4>
+                        </div>
+                    </div>
+                    <div class="zvt-card-footer">
+                        <a class="text-decoration-none" href="#">View All</a>
+                    </div>
+                </div>
+                <div class="zvt-card-container margin-15">
+                    <div class="zvt-card-content margin-15">
+                        <div class="zvt-card-icon margin-10">
+                            <i class="icofont-check-circled"></i>
+                        </div>
+
+                        <div class="zvt-card-icon-content">
+                            <span>Processed </span>
+                            <h4>$ 20,000</h4>
+                        </div>
+                    </div>
+                    <div class="zvt-card-footer">
+                        <a class="text-decoration-none" href="#">View All</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
