@@ -24,8 +24,10 @@ body {
 }
 
 .fixed-top {
+    overflow: hidden;
     position: fixed;
     top: 0;
+    
 }
 
 .margin-5 {
@@ -39,8 +41,13 @@ body {
 .margin-15 {
     margin: 15px;
 }
+
 .margin-20 {
     margin: 20px;
+}
+
+.margin-25 {
+    margin: 2px;
 }
 
 .margin-top-bottom-5 {
@@ -146,11 +153,13 @@ body {
 .zvt-bottom-content {
     margin-top: 150px;
 }
+
 /* MAIN WINDOW */
 
 .zvt-main-window {
     background-color: var(--light-gray);
     overflow: overlay;
+    width:100%;
 }
 
 .zvt-nav-bar {
@@ -158,7 +167,7 @@ body {
     border-top: 1px solid var(--light-gray);
     border-bottom: 1px solid var(--light-gray);
     display: flex;
-    width: 1066px;
+    width: 100%;
     justify-content: space-between;
 
 
@@ -189,9 +198,11 @@ body {
 
 
 }
-.zvt-user-info .notification{
+
+.zvt-user-info .notification {
     transition: 0.8s;
 }
+
 .zvt-user-info .notification:hover {
     transform: scale(1.5);
     transition: 0.8s;
@@ -215,6 +226,7 @@ body {
     border: 1px solid var(--smooth-gray);
     transition: 0.8s;
 }
+
 .zvt-user-info img:hover {
     width: 30px;
     height: 30px;
@@ -237,7 +249,7 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    
+
 }
 
 .zvt-user-window {
@@ -248,7 +260,7 @@ body {
     background-color: var(--white-color);
     padding: 10px;
     border-radius: 5px;
-    width: 980px;
+    width: 90%;
     margin: 25px auto;
 }
 
@@ -324,96 +336,134 @@ body {
     color: var(--light-black);
 
 }
-.zvt-overview-cards{
+
+.zvt-overview-cards {
     display: flex;
     justify-content: space-evenly;
 }
-.zvt-card-container{
+
+.zvt-card-container {
     background-color: var(--white-color);
     width: 300px;
     height: 150px;
-    border-radius:15px;
+    border-radius: 15px;
     overflow: hidden;
     transition: 0.8s;
 
-  
-}
-.zvt-card-container:hover{
-    transform: scale(1.1);
-    transition: 0.8s;
-  
+
 }
 
-.zvt-card-content{
+.zvt-card-container:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+
+}
+
+.zvt-card-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-   
+
 }
-.zvt-card-icon{
+
+.zvt-card-icon {
     font-size: 30px;
-    margin:25px;
+    margin: 25px;
     color: var(--smooth-gray);
     transition: 0.8s;
 
 
-}.zvt-card-icon:hover{
+}
+
+.zvt-card-icon:hover {
     transform: scale(1.1);
     transition: 0.8s;
 }
 
-.zvt-card-icon .icofont-law-alt-1{
-    display:flex;
+.zvt-card-icon .icofont-law-alt-1 {
+    display: flex;
 }
 
-.zvt-card-icon .icofont-law-alt-1:hover{
+.zvt-card-icon .icofont-law-alt-1:hover {
     transform: rotateY(180deg);
 }
 
-.zvt-card-icon .icofont-ui-rotation{
-    display:flex;
+.zvt-card-icon .icofont-ui-rotation {
+    display: flex;
 }
-.zvt-card-icon .icofont-ui-rotation:hover{
+
+.zvt-card-icon .icofont-ui-rotation:hover {
     transform: rotate(180deg);
-    transition:5s;
+    transition: 5s;
 }
+
 @keyframes mymove {
-    50% {transform: rotate(180deg) ;}
-    
-  }
-  .zvt-card-icon .icofont-check-circled{
-    display:flex;
-  }
-.zvt-card-icon .icofont-check-circled:hover{
+    50% {
+        transform: rotate(180deg);
+    }
+
+}
+
+.zvt-card-icon .icofont-check-circled {
+    display: flex;
+}
+
+.zvt-card-icon .icofont-check-circled:hover {
     color: var(--green-color);
     transform: rotate(-20deg);
-    transition:2s;
+    transition: 2s;
 }
 
 
-.zvt-card-icon-content{
-    margin:10px;
+.zvt-card-icon-content {
+    margin: 10px;
     font-size: 20px;
     font-family: var(--font-oswald);
     color: var(--smooth-gray);
 }
-.zvt-card-footer{
+
+.zvt-card-footer {
     /* background-color: var(--smooth-gray); */
     background: var(--card-color);
     height: 150px;
-   
+
 }
-.zvt-card-footer a{
+
+.zvt-card-footer a {
     display: block;
-    padding:10px ;
+    padding: 10px;
     color: var(--white-color);
     font-family: var(--font-lato);
     transition: 0.8s;
 
 }
-.zvt-card-footer a:hover{
-     transition: 0.8s;
+
+.zvt-card-footer a:hover {
+    transition: 0.8s;
     color: var(--light-black);
+
+}
+
+
+/* TABLE CONTAINER */
+
+.zvt-main-table  table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    background-color: var(--white-color);
+    margin: 0 auto;
+
+}
+
+td,
+th {
     
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
