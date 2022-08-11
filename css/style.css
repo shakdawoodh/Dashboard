@@ -20,6 +20,8 @@ body {
     --green-color: green;
     --dark-green: rgb(2, 84, 2);
     --light-black: rgb(22, 22, 22);
+    --table-hover-color: #a5a5a5;
+    --table-even-color: #dddddd;
     --card-color: linear-gradient(to left, rgb(56 64 80), rgb(97 112 137));
 }
 
@@ -161,16 +163,17 @@ body {
     border-top: 1px solid var(--light-gray);
     border-bottom: 1px solid var(--light-gray);
     display: flex;
-    position:absolute;
+    position: absolute;
     z-index: 999;
     width: -webkit-fill-available;
     justify-content: space-between;
-  
+
 
 
 }
-.zvt-main-window-container{
- margin-top: 100px;
+
+.zvt-main-window-container {
+    margin-top: 100px;
 }
 
 .zvt-search-box input {
@@ -193,10 +196,7 @@ body {
     gap: 15px;
     /* align-items: center; */
     transition: 0.8s;
-    font-size: 17px;
-
-
-
+    font-size: 17px
 }
 
 .zvt-user-info .notification {
@@ -424,7 +424,6 @@ body {
 }
 
 .zvt-card-footer {
-    /* background-color: var(--smooth-gray); */
     background: var(--card-color);
     height: 150px;
 
@@ -448,23 +447,51 @@ body {
 
 /* TABLE CONTAINER */
 
-.zvt-main-table  table{
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
+.zvt-main-table {
+    border-radius: 15px;
+    width: 90%;
     background-color: var(--white-color);
     margin: 0 auto;
+    transition: 0.8s;
+    padding: 15px;
 
 }
 
+.zvt-main-table:hover {
+    transform: scale(1.05);
+    transition: 0.8s;
+}
+
+.zvt-main-table table {
+    margin-top: 15px;
+    width: 100%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    transition: 0.8s;
+}
+
+
 td,
 th {
-    
-    border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
 }
 
-tr:nth-child(even) {
-    background-color: #dddddd;
+.zvt-main-table tr {
+    transition: 0.8s;
+
 }
 
+.zvt-main-table tr:hover {
+
+    background-color: var(--table-hover-color);
+    transition: 0.8s;
+    transform: scale(1.02);
+
+}
+
+
+tr:nth-child(even) {
+
+    background-color: var(--table-even-color);
+}
